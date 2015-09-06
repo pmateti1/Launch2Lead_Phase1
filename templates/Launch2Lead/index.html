@@ -1,15 +1,15 @@
+{% block content %}
 {% load staticfiles %}
-
 <!DOCTYPE html>
-<html lang="en" >
+
+<html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Launch2Lead adds value to your startup">
+    <meta name="author" content="Launch2Lead">
 
     <title>Launch2Lead</title>
 
@@ -19,7 +19,7 @@
     <!-- Custom CSS -->
     <link href="{% static 'css/animate.css' %}" rel="stylesheet">
     <link href="{% static 'css/agency.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/creative1.css' %}" type="text/css">
+    <link href="{% static 'css/creative1.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <!--link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
@@ -42,6 +42,7 @@
 
 <body id="page-top" class="index">
 <div style="position: fixed; left: 0; right: 0; top: 0; bottom: 0;"></div>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top fadeInDown animated">
@@ -79,7 +80,7 @@
                         <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Register/Login</a>
+                        <a class="page-scroll" data-toggle="modal" href="login.html" data-target="#myModal">Register/Login</a>
                     </li>
                 </ul>
             </div>
@@ -87,8 +88,106 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-body">
+        <ul id="myTab" class="nav nav-tabs">
+            <li><a href="#signin" data-toggle="tab">Sign In</a></li>
+            <li><a href="#signup" data-toggle="tab">Register</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade" id="signup">
+                <form id="user_form" class="form-horizontal" action="" method="post"
+                        enctype="multipart/form-data">
+                    {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="control-group">
+                        <label class="control-label" for="confirmsignup"></label>
+                            <div class="controls">
+                                <input id="confirmsignup" type="submit" name="confirmsignup" class="btn btn-success" value="Submit" />
+                            </div>
+                        </div>
+{#                    <fieldset>#}
+{#                        <div class="control-group">#}
+{#                            <label class="control-label" for="username">Name:</label>#}
+{#                            <div class="controls">#}
+{#                                <input id="username" name="username" class="form-control input-large" type="text" placeholder="JoeSixpack" required="">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="control-group">#}
+{#                            <label class="control-label" for="email">Email:</label>#}
+{#                            <div class="controls">#}
+{#                                <input id="email" name="email" class="form-control input-large" type="text" placeholder="JoeSixpack@sixpacksrus.com" required="">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="control-group">#}
+{#                            <label class="control-label" for="password">Password:</label>#}
+{#                            <div class="controls">#}
+{#                                <input id="password" name="password" class="form-control input-large" type="password" placeholder="********" required="">#}
+{#                            1-8 Characters#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="control-group">#}
+{#                            <label class="control-label" for="reenterpassword">Re-Enter Password:</label>#}
+{#                            <div class="controls">#}
+{#                                <input id="reenterpassword" class="form-control input-large" name="reenterpassword" type="password" placeholder="********" required="">#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </fieldset>#}
+                </form>
+            </div>
+{#            <div class="tab-pane fade active in" id="signin">#}
+{#             <form class="form-signin span4" id="login_form" method="post" action='{{ login }}'>#}
+{#                {% if bad_details %}#}
+{#                    <p><strong>Your username and/or password were incorrect!</strong></p>#}
+{#                {% elif disabled_account %}#}
+{#                    <p><strong>Your Launch2Lead account is currently disabled; we can't log you in!</strong></p>#}
+{#                {% endif %}#}
+{#                {% csrf_token %}#}
+{#                Username: <input type="text" class="input-block-level" placeholder="Username" name="username" value=""#}
+{#                                 size="50"/>#}
+{#                            <br/>#}
+{#                Password: <input type="password" class="input-block-level" placeholder="Password" name="password" value=""#}
+{#                                 size="50"/>#}
+{#                            <br/>#}
+{#                 <button class="btn btn-primary" type="submit">Sign in</button>#}
+{#            </form>#}
 
+{#                <form class="form-horizontal">#}
+{#                <fieldset>#}
+{#                    <div class="control-group">#}
+{#                        <label class="control-label" for="userid">Alias:</label>#}
+{#                        <div class="controls">#}
+{#                            <input id="userid" name="userid" type="text" class="form-control input-medium" placeholder="JoeSixpack" required="">#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="control-group">#}
+{#                        <label class="control-label" for="passwordinput">Password:</label>#}
+{#                        <div class="controls">#}
+{#                            <input id="passwordinput" name="passwordinput" class="form-control input-medium" type="password" placeholder="********" required="">#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="control-group">#}
+{#                        <div class="controls">#}
+{#                            <label class="checkbox inline" for="rememberme-0">#}
+{#                            <input type="checkbox" name="rememberme-0" id="rememberme-0" value="Remember me">#}
+{#                            Remember me#}
+{#                            </label>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="control-group">#}
+{#                        <label class="control-label" for="sign-in"></label>#}
+{#                        <div class="controls">#}
+{#                            <button id="sign-in" name="sign-in" class="btn btn-success">Sign In</button>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </fieldset>#}
+{#                </form>#}
+{#            </div>#}
 
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
 
     <!-- Header -->
     <header>
@@ -101,28 +200,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Our Complete Service help-->
-     <!--section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Services</h2>
-                    <h3 class="section-subheading text-muted">Check out our various services which add value to your startup</h3>
-                </div>
-            </div>
-        <div class="container">
-            <div class="col-lg-9 text-left"></div>
-                <div class="col-lg-3 text-left">
-                    <br>
-                    <a href="#" class="btn btn-default" role="button">
-                       Research Work
-                    </a>
-                </div>
-        </div>
-        </div>
-    </section-->
-
 
     <!-- Our services -->
     <section id="portfolio" class="bg-light-gray">
@@ -375,15 +452,15 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Let us introduce ourselves</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="{% static 'images/team/1.jpg' %}" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <h4>Nitin Srivastava</h4>
+                        <p class="text-muted">Co-Founder & Lead Modeller</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -397,8 +474,8 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="{% static 'images/team/2.jpg' %}" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <h4>Pranava Mateti</h4>
+                        <p class="text-muted">Co-Founder & Lead Designer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -409,11 +486,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="{% static 'images/team/3.jpg' %}" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <img src="{% static 'images/team/1.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Chandra Sekhar Mateti</h4>
+                        <p class="text-muted">Lead Advisor</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -678,6 +755,7 @@
 
     <!-- jQuery -->
     <script src="{% static 'js/jquery.js' %}"></script>
+{#    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>#}
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -689,7 +767,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
-    <script src="{% static 'js/contact_me.js' %}"></script>
+{#    <script src="{% static 'js/contact_me.js' %}"></script>#}
 
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'js/agency.js' %}"></script>
@@ -703,3 +781,4 @@
 </body>
 
 </html>
+{% endblock %}

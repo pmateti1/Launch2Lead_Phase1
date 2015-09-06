@@ -13,8 +13,27 @@
         margin-top: -15px;
     }
 
-
 #portfolio .portfolio-item img{
     height: 289px;
     width: 400px;
+
+}
+
+#myModal .modal-body {
+    position: relative;
+    padding: 15px;
+    height: auto;
+    width: 700px;
+    opacity: 0.8;
+    background-color: #fec503;
+    box-shadow: 0 0 10px 4px;
+    margin: 0 auto;
+    margin-top: 8%;
+    border-radius: 5px;
+}
+#myModal .nav-tabs{
+
+}
+#myModal .nav{
+
 }

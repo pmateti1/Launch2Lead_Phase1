@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^Launch2Lead/', include('authentication.urls')),
     url(r'^Launch2Lead/', include('Launch2Lead_v01.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
