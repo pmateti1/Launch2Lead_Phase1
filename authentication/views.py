@@ -6,14 +6,14 @@ from authentication.forms import RegistrationForm
 from authentication.models import UserProfile
 
 def Launch2LeadRegistration(request):
-    if request.user.is_authenticated():
-        return HttpResponseRedirect('/profile/')
+    # if request.user.is_authenticated():
+    #     return HttpResponseRedirect('/profile/')
     if request.method=='POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
                 user = User.objects.create_user(username=form.cleaned_data['username'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
                 user.save()
-                launchers = UserProfile(user=user, email = form.cleaned_data['email'] )
+                launchers = UserProfile.objects.get_or_create(user=user, email = form.cleaned_data['email'])[0]
                 launchers.save()
                 return HttpResponseRedirect('/profile/')
         else:

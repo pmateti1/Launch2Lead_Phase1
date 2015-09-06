@@ -6,10 +6,10 @@ from django.forms import ModelForm
 from authentication.models import UserProfile
 
 class RegistrationForm(ModelForm):
-    username = forms.CharField(help_text="Please Enter a Name")
-    email = forms.EmailField(help_text="Please Enter your Email")
-    password = forms.CharField(widget=forms.PasswordInput(), help_text="Please Enter a Password")
-    password2 = forms.CharField(widget=forms.PasswordInput(), help_text="Verify Password")
+    username = forms.CharField(label=(u'User Name'))
+    email = forms.EmailField(label=(u'Email Address'))
+    password = forms.CharField(widget=forms.PasswordInput(), label=(u'Password'))
+    password2 = forms.CharField(widget=forms.PasswordInput(), label=(u'Verify Password'))
 
     class Meta:
         model = UserProfile
@@ -22,6 +22,12 @@ class RegistrationForm(ModelForm):
         except User.DoesNotExist:
             return username
         raise forms.ValidationError("That username is already taken, Please try registering by a different username")
+
+    def clean_email(self):
+        data = self.cleaned_data['email']
+        if "@" not in data:
+             raise forms.ValidationError("Email Address not valid")
+        return data
 
     def clean(self):
             if self.cleaned_data['password'] != self.cleaned_data['password2']:
