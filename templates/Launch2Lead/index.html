@@ -62,26 +62,36 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Our Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Testimonials</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Venture Capitalists</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-toggle="modal" href="login.html" data-target="#myModal">Register/Login</a>
-                    </li>
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Our Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Venture Capitalists</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact Us</a>
+                        </li>
+                    {% if user.is_authenticated %}
+                        <li>
+                            <a class="page-scroll" href="#" >{{ user.username }}</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Your Account</a> </li>
+                                <li><a href="#">Logout</a> </li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a class="page-scroll" data-toggle="modal" href="#" data-target="#myModal">Register/Login</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -95,96 +105,65 @@
             <li><a href="#signup" data-toggle="tab">Register</a></li>
         </ul>
         <div class="tab-content">
+{#################################################### Login Tab #######################################}
+            <div class="tab-pane fade active in" id="signin">
+             <form id="LoginForm" class="form-signin span4" action="" method="post">
+                {% csrf_token %}
+                {% if form_auth.errors %}<p>Please correct the following fields:</p>{% endif %}
+                <div class="register_div">
+                        {% if form_auth.username.errors %}<p class="error">{{ form_auth.username.errors }}</p>{% endif %}
+                        <p><label for="username"{% if form_auth.username.errors %} class="error"{% endif %}>Username:</label></p>
+                        <p>{{ form_auth.username }}</p>
+                </div>
+                <div class="register_div">
+                        {% if form_auth.password.errors %}<p class="error">{{ form_auth.password.errors }}</p>{% endif %}
+                        <p><label for="password"{% if form_auth.password.errors %} class="error"{% endif %}>Password:</label></p>
+                        <p>{{ form_auth.password }}</p>
+                </div>
+                        <div class="control-group">
+                        <label class="control-label" for="login"></label>
+                            <div class="controls">
+                                <input id="login" type="submit" name="login" class="btn btn-success" value="Login" />
+                            </div>
+                        </div>
+                </form>
+                <p>Forgot your password? <a href="/resetpassword/">Reset it!</a></p>
+            </div>
+{################################################## Registration Tab ##################################################        #}
             <div class="tab-pane fade" id="signup">
-                <form id="user_form" class="form-horizontal" action="" method="post"
+            <form id="RegistrationForm" class="form-horizontal" action="" method="post"
                         enctype="multipart/form-data">
                     {% csrf_token %}
-                        {{ form.as_p }}
+                        {% if form.errors %}<p>Please correct the following fields:</p>{% endif %}
+                        <div class="register_div">
+                                {% if form.username.errors %}<p class="error">{{ form.username.errors }}</p>{% endif %}
+                                <p><label for="username"{% if form.username.errors %} class="error"{% endif %}>Username:</label></p>
+                                <p>{{ form.username }}</p>
+                        </div>
+                        <div class="register_div">
+                        {% if form.email.errors %}<p class="error">{{ form.email.errors }}</p>{% endif %}
+                            <p><label for="email"{% if form.email.errors %} class="error"{% endif %}>Email:</label></p>
+                            <p>{{ form.email }}</p>
+                            </div>
+                        <div class="register_div">
+                                {% if form.password.errors %}<p class="error">{{ form.password.errors }}</p>{% endif %}
+                                <p><label for="password"{% if form.password.errors %} class="error"{% endif %}>Password:</label></p>
+                                <p>{{ form.password }}</p>
+                        </div>
+                        <div class="register_div">
+                                {% if form.password2.errors %}<p class="error">{{ form.password2.errors }}</p>{% endif %}
+                                <p><label for="password2"{% if form.password2.errors %} class="error"{% endif %}>Verify Password:</label></p>
+                                <p>{{ form.password2 }}</p>
+                        </div>
                         <div class="control-group">
                         <label class="control-label" for="confirmsignup"></label>
                             <div class="controls">
-                                <input id="confirmsignup" type="submit" name="confirmsignup" class="btn btn-success" value="Submit" />
+                                <input id="confirmsignup" type="submit" name="confirmsignup" class="btn btn-success" value="Register" />
                             </div>
                         </div>
-{#                    <fieldset>#}
-{#                        <div class="control-group">#}
-{#                            <label class="control-label" for="username">Name:</label>#}
-{#                            <div class="controls">#}
-{#                                <input id="username" name="username" class="form-control input-large" type="text" placeholder="JoeSixpack" required="">#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="control-group">#}
-{#                            <label class="control-label" for="email">Email:</label>#}
-{#                            <div class="controls">#}
-{#                                <input id="email" name="email" class="form-control input-large" type="text" placeholder="JoeSixpack@sixpacksrus.com" required="">#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="control-group">#}
-{#                            <label class="control-label" for="password">Password:</label>#}
-{#                            <div class="controls">#}
-{#                                <input id="password" name="password" class="form-control input-large" type="password" placeholder="********" required="">#}
-{#                            1-8 Characters#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="control-group">#}
-{#                            <label class="control-label" for="reenterpassword">Re-Enter Password:</label>#}
-{#                            <div class="controls">#}
-{#                                <input id="reenterpassword" class="form-control input-large" name="reenterpassword" type="password" placeholder="********" required="">#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </fieldset>#}
                 </form>
             </div>
-{#            <div class="tab-pane fade active in" id="signin">#}
-{#             <form class="form-signin span4" id="login_form" method="post" action='{{ login }}'>#}
-{#                {% if bad_details %}#}
-{#                    <p><strong>Your username and/or password were incorrect!</strong></p>#}
-{#                {% elif disabled_account %}#}
-{#                    <p><strong>Your Launch2Lead account is currently disabled; we can't log you in!</strong></p>#}
-{#                {% endif %}#}
-{#                {% csrf_token %}#}
-{#                Username: <input type="text" class="input-block-level" placeholder="Username" name="username" value=""#}
-{#                                 size="50"/>#}
-{#                            <br/>#}
-{#                Password: <input type="password" class="input-block-level" placeholder="Password" name="password" value=""#}
-{#                                 size="50"/>#}
-{#                            <br/>#}
-{#                 <button class="btn btn-primary" type="submit">Sign in</button>#}
-{#            </form>#}
-
-{#                <form class="form-horizontal">#}
-{#                <fieldset>#}
-{#                    <div class="control-group">#}
-{#                        <label class="control-label" for="userid">Alias:</label>#}
-{#                        <div class="controls">#}
-{#                            <input id="userid" name="userid" type="text" class="form-control input-medium" placeholder="JoeSixpack" required="">#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="control-group">#}
-{#                        <label class="control-label" for="passwordinput">Password:</label>#}
-{#                        <div class="controls">#}
-{#                            <input id="passwordinput" name="passwordinput" class="form-control input-medium" type="password" placeholder="********" required="">#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="control-group">#}
-{#                        <div class="controls">#}
-{#                            <label class="checkbox inline" for="rememberme-0">#}
-{#                            <input type="checkbox" name="rememberme-0" id="rememberme-0" value="Remember me">#}
-{#                            Remember me#}
-{#                            </label>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="control-group">#}
-{#                        <label class="control-label" for="sign-in"></label>#}
-{#                        <div class="controls">#}
-{#                            <button id="sign-in" name="sign-in" class="btn btn-success">Sign In</button>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </fieldset>#}
-{#                </form>#}
-{#            </div>#}
-
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
 </div>
