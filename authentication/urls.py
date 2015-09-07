@@ -3,6 +3,7 @@ from authentication import views
 
 urlpatterns = [
     url(r'^$', views.Authenticate_1, name='register'),
+    url(r'^logout/$', views.LogoutRequest, name='logout'),
     # url(r'^register/$', views.Launch2LeadRegistration),
     # url(r'^$', views.user_login, name='login'),
     # url(r'^$', views.index, name='index'),
