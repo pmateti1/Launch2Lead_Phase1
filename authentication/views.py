@@ -49,49 +49,6 @@ def Authenticate_1(request,
     return render_to_response('Launch2Lead/index.html', {'form': form, 'form_auth': form_auth}, context_instance=RequestContext(request))
 
 
-# def Launch2LeadRegistration(request):
-#     # if request.user.is_authenticated():
-#     #     return HttpResponseRedirect('/profile/')
-#     if request.method=='POST' and 'confirmsignup' in request.POST:
-#         form = RegistrationForm(request.POST)
-#         if form.is_valid():
-#                 user = User.objects.create_user(username=form.cleaned_data['username'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
-#                 user.save()
-#                 launchers = UserProfile.objects.get_or_create(user=user, email = form.cleaned_data['email'])[0]
-#                 launchers.save()
-#                 return HttpResponseRedirect('/profile/')
-#         else:
-#                 return render_to_response('Launch2Lead/index.html', {'form': form}, context_instance=RequestContext(request))
-#     else:
-#         '''user is not submitting the form. show them a blank registration form'''
-#         form=RegistrationForm()
-#         context = {'form':form}
-#         return  render_to_response('Launch2Lead/index.html', context, context_instance=RequestContext(request))
-#
-# def LoginRequest(request):
-#         # if request.user.is_authenticated():
-#         #         return HttpResponseRedirect('/profile/')
-#         if request.method == 'POST':
-#             if 'login' in request.POST:
-#                 loginform = LoginForm(request.POST, prefix='login')
-#                 username = loginform.cleaned_data['username']
-#                 if loginform.is_valid():
-#                     password = loginform.cleaned_data['password']
-#                     launchers = authenticate(username=username, password=password)
-#                     if launchers is not None:
-#                         login(request, launchers)
-#                         return HttpResponseRedirect('/profile/')
-#                     else:
-#                         return render_to_response('Launch2Lead/index.html', {'loginform': loginform}, context_instance=RequestContext(request))
-#                 else:
-#                     return render_to_response('Launch2Lead/index.html', {'loginform': loginform}, context_instance=RequestContext(request))
-#         else:
-#                 ''' user is not submitting the form, show the login form '''
-#                 loginform = LoginForm()
-#                 context = {'loginform': loginform}
-#                 return render_to_response('Launch2Lead/index.html', context, context_instance=RequestContext(request))
-
-
 def LogoutRequest(request):
     logout(request)
     return HttpResponseRedirect('/Launch2Lead/')
