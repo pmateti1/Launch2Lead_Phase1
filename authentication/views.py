@@ -1,6 +1,5 @@
-import urlparse
 from django.contrib.auth.models import User
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import password_reset, password_reset_confirm
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
@@ -51,4 +50,19 @@ def Authenticate_1(request,
 
 def LogoutRequest(request):
     logout(request)
+
     return HttpResponseRedirect('/Launch2Lead/')
+
+def reset(request):
+
+    return password_reset(request, template_name='Launch2Lead/password_reset/reset.html',
+        email_template_name='Launch2Lead/password_reset/reset_email.html',
+        subject_template_name='Launch2Lead/password_reset/reset_subject.txt',
+        post_reset_redirect=reverse('success'))
+
+def reset_confirm(request, uidb64=None, token=None):
+    return password_reset_confirm(request, template_name='Launch2Lead/password_reset/reset_confirm.html',
+        uidb36=uidb36, token=token, post_reset_redirect=reverse('success'))
+
+def success(request):
+  return render_to_response(request, "Launch2Lead/password_reset/success.html")

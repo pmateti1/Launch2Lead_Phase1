@@ -19,7 +19,7 @@ from Launch2Lead_v01 import views
 
 urlpatterns = [
     url(r'^Launch2Lead/', include('authentication.urls')),
-    url(r'^$', views.index, name='index'),
     url(r'^Launch2Lead/', include('Launch2Lead_v01.urls')),
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', include(admin.site.urls)),
 ]

@@ -5,4 +5,5 @@ urlpatterns = [
     # url(r'^$', views.register, name='register'),
     # url(r'^$', views.user_login, name='login'),
     url(r'^$', views.index, name='index'),
+    url(r'^Knowledge_bucket$', views.KnowledgeDocuments, name='knowledgeBlog'),
  ]

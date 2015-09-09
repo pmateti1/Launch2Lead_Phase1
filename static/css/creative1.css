@@ -18,13 +18,12 @@
     width: 400px;
 
 }
-
 #myModal .modal-body {
     position: relative;
     padding: 15px;
     height: auto;
     width: 700px;
-    opacity: 0.9;
+    opacity: 0.95;
     background-color: #fec503;
     box-shadow: 0 0 10px 4px;
     margin: 0 auto;
@@ -32,8 +31,136 @@
     border-radius: 5px;
 }
 #myModal .nav-tabs{
-
+    font-size: 16px;
+    color: #080808;
 }
-#myModal .nav{
-
+#myModal .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    opacity: 0.95;
+    color: #fec503;
+    cursor: default;
+    background-color:#07582E ;
+    border: 3px solid #07582E;
+    border-bottom-color: transparent;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 2px;
+    line-height: 1.42857143;
 }
+#myModal  .nav-tabs>li>a:hover {
+    opacity: 0.85;
+    color: #fec503;
+    cursor: default;
+    background-color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+    border-bottom-color: transparent;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 2px;
+    line-height: 1.42857143;
+}
+#myModal .nav-tabs>li>a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    font-size: 17px;
+    color: #080808;
+}
+
+#myModal .tab-pane{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 16px;
+}
+#myModal .btn {
+    margin-bottom: 0;
+    font-weight: 600;
+    width: 20%;
+    line-height: 2;
+    font-size: 18px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+#myModal .btn-success {
+    font-size: 16px;
+    color: #fec503;
+    background-color: #07582E;
+    border-color: #07582E;
+}
+
+#myModal button{
+    background: transparent;
+    border: transparent;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    color:#fec503;
+}
+
+.navbar-base {
+    background-color:#222;
+    border-color:transparent
+}
+.navbar-base .navbar-brand{
+    color:#fed136;
+    font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
+.navbar-base .navbar-brand:hover,.navbar-base .navbar-brand:focus,.navbar-base .navbar-brand:active,
+.navbar-base .navbar-brand.active{
+    color:#fec503}
+.navbar-base .navbar-collapse{
+    border-color:rgba(255,255,255,.02)}
+.navbar-base .navbar-toggle{
+    background-color:#fed136;
+    border-color:#fed136
+}
+.navbar-base .navbar-toggle .icon-bar{
+    background-color:#242424}
+.navbar-base .navbar-toggle:hover,.nnavbar-baseavbar-default .navbar-toggle:focus{
+    background-color:#fed136}
+.navbar-base .nav li a{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#fff
+}
+.navbar-base .nav li a:hover,.navbar-base .nav li a:focus{
+    color:#fed136;outline:0}
+.navbar-base .navbar-nav>.active>a{
+    border-radius:0;
+    color:#fff;
+    background-color:#fed136
+}
+.navbar-base .navbar-nav>.active>a:hover,.navbar-base .navbar-nav>.active>a:focus{
+    color:#fff;
+    background-color:#fec503}
+@media (min-width:768px){
+    .navbar-base{background-color:#222;
+        padding:25px 0;
+        -webkit-transition:padding .3s;
+        -moz-transition:padding .3s;transition:padding .3s;
+        border:0}
+    .navbar-base .navbar-brand{
+        font-size:2em;-webkit-transition:all .3s;
+        -moz-transition:all .3s;
+        transition:all .3s}
+    .navbar-base .navbar-nav>.active>a{
+        border-radius:3px}
+    .navbar-base.navbar-shrink{
+        background-color:#222;
+        padding:10px 0
+    }
+    .navbar-base.navbar-shrink .navbar-brand{font-size:1.5em}}
+
+
+    .navbar-base .navbar-header .navbar-brand img {
+        height: inherit;
+        width: inherit;
+        margin-top: -15px;
+    }
+/*#dropdown:hover {*/
+	/*display: block;*/
+	/*padding: 3px 8px;*/
+	/*/!*background-color: #5e8ce9;*!/*/
+	/*/!*color: #fff;*!/*/
+	/*text-decoration: none; }*/
