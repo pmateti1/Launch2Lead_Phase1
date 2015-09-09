@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Launch2Lead_v01',
-    'password_reset',
     'authentication',
 )
 
