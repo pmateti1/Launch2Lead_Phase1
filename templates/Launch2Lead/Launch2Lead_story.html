@@ -1,0 +1,815 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Launch2Lead adds value to your startup">
+<meta name="author" content="Launch2Lead">
+
+<title>Launch2Lead</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="{% static 'css/animate.css' %}" rel="stylesheet">
+{#<link href="{% static 'css/animate_slider.css' %}" rel="stylesheet">#}
+{#<link href="{% static 'css/agency.css' %}" rel="stylesheet">#}
+{#<link href="{% static 'css/creative1.css' %}" rel="stylesheet">#}
+{#    <!-- Custom Fonts -->#}
+<link href="{% static 'font-awesome/fonts/FontAwesome.otf' %}" rel="stylesheet">
+<link href="{% static 'font-awesome/fonts/fontawesome-webfont.eot' %}" rel="stylesheet">
+<link href="{% static 'font-awesome/fonts/fontawesome-webfont.svg' %}" rel="stylesheet">
+<link href="{% static 'font-awesome/fonts/fontawesome-webfont.ttf' %}" rel="stylesheet">
+<link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff' %}" rel="stylesheet">
+<link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff2' %}" rel="stylesheet">
+
+<!--Animated Slider-->
+{#    <link rel="stylesheet" href="css/animate.css" type="text/css" />#}
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/settings.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen" />
+
+    <!-- jQuery -->
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+
+<!--JavaScripts for the Animated Slider-->
+<script type="text/javascript" src="{% static 'include/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'include/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+
+<!-- Document Title
+============================================= -->
+<title>Revolution Slider | Canvas</title>
+
+<style>
+
+    .revo-slider-emphasis-text {
+        font-size: 64px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        font-family: 'Raleway', sans-serif;
+        padding: 15px 20px;
+        border-top: 2px solid #FFF;
+        border-bottom: 2px solid #FFF;
+    }
+
+    .revo-slider-desc-text {
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        width: 650px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .revo-slider-caps-text {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+</style>
+
+</head>
+
+<body >
+
+<!-- Document Wrapper
+============================================= -->
+<div id="myModalanimi" >
+<div class="modal-body">
+{#<section id="slider" class="slider-parallax revoslider-wrap clearfix">#}
+        <!--
+        #################################
+            - THEMEPUNCH BANNER -
+        #################################
+        -->
+    <div class="tp-banner-container ">
+        <div class="tp-banner" >
+            <ul>    <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="15000"  data-saveperformance="off"  data-title="Why Choose Us">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/rev/bg3.jpg' %}"  alt="kenburns6"  data-bgposition="left top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right bottom">
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
+                data-x="453"
+                data-y="170"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="1000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333;">Why Choose Launch2Lead</div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+                data-x="264"
+                data-y="185"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="1200"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333;">Unlimited Possibilities</div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                data-x="245"
+                data-y="295"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="1400"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;">Launch2Lead helps you shape your startup from the start</div>
+
+
+            </li>
+
+            <li class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="{% static 'images/rev/bg1.jpg' %}"  data-saveperformance="off"  data-title="The Journey">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/rev/transparent.png' %}"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="100"
+                data-y="50"
+                data-customin="x:250;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="2000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/idea.png' %}" alt="Idea"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="350"
+                data-y="130"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="2500"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/right.png' %}" alt="Arrow"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="500"
+                data-y="75"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="3000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/research.jpg' %}" alt="Research"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="730"
+                data-y="100"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="3500"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/rightdown.png' %}" alt="Arrow"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="880"
+                data-y="200"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/team.png' %}" alt="Team"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="750"
+                data-y="375"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4500"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/downleft.png' %}" alt="Down Arrow"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="550"
+                data-y="450"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="5000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/funding.png' %}" alt="Funding"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="350"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="5500"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/left.png' %}" alt="Down Left"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="100"
+                data-y="450"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="6000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/winner.png' %}" alt="Success"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                data-x="-10"
+                data-y="250"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="1400"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 11; font-size: 45px; color: #333;">The Journey goes from</div>
+
+            </li>
+
+
+                <li class="dark" data-transition="slideup" data-slotamount="1" data-masterspeed="1000" data-thumb="{% static 'images/rev/main/s2-thumb.jpg' %}"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="Market Research">
+                    <!-- MAIN IMAGE -->
+                                        <img src="{% static 'images/rev/bg5.jpg' %}"  alt="kenburns6"  data-bgposition="left top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right bottom">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-8"
+                    data-x="400"
+                    data-y="225"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="2600"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 3;"><img src="{% static 'images/rev/main/title1.png' %}" alt="Image"></div>
+
+
+
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-6"
+                    data-x="600"
+                    data-y="50"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="3000"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 5;"><img src="{% static 'images/rev/main/title3.png' %}" alt="Image"></div>
+
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-5"
+                    data-x="600"
+                    data-y="350"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="3200"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 6;"><img src="{% static 'images/rev/main/title4.png' %}" alt="Image"></div>
+
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-7"
+                    data-x="800"
+                    data-y="225"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="2800"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 4;"><img src="{% static 'images/rev/main/title2.png' %}" alt="Image"></div>
+
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-4"
+                    data-x="1000"
+                    data-y="50"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="3400"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 7;"><img src="{% static 'images/rev/main/title5.png' %}" alt="Image"></div>
+
+                    <div class="tp-caption customin ltl tp-resizeme rs-parallaxlevel-3"
+                    data-x="1000"
+                    data-y="350"
+                    data-customin="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+                    data-speed="700"
+                    data-start="3600"
+                    data-easing="easeOutCubic"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 8;"><img src="{% static 'images/rev/main/title6.png' %}" alt="Image"></div>
+
+
+                    <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text"
+                    data-x="0"
+                    data-y="120"
+                    data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-speed="800"
+                    data-start="1200"
+                    data-easing="easeOutQuad"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 11; ">Launch2Lead</div>
+
+                    <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder uppercase"
+                    data-x="-3"
+                    data-y="140"
+                    data-customin="x:5;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:5;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-speed="800"
+                    data-start="1400"
+                    data-easing="easeOutQuad"
+                    data-splitin="chars"
+                    data-splitout="none"
+                    data-elementdelay="0.1"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 11; font-size: 56px;">Helps you with</div>
+
+                    <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
+                    data-x="0"
+                    data-y="240"
+                    data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                    data-speed="800"
+                    data-start="1600"
+                    data-easing="easeOutQuad"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.1"
+                    data-endspeed="1000"
+                    data-endeasing="Power4.easeIn" style="z-index: 11; max-width: 550px; white-space: normal;">All its research papers so that you can</div>
+
+
+                </li>
+                <li class="dark" data-transition="slideup" data-slotamount="1" data-masterspeed="1000" data-thumb="{% static 'images/rev/main/s2-thumb.jpg' %}"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="LinkedIn scrapper">
+            <!-- MAIN IMAGE -->
+                <img src="{% static 'images/rev/bg5.jpg' %}"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="25000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center top">
+                <!-- LAYERS -->
+                <div class="tp-caption customin"
+                    data-x="245"
+                    data-y="92"
+                    data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                    data-speed="500"
+                    data-start="500"
+                    data-end="4000"
+                    data-easing="Power2.easeIn"
+                    data-endspeed="2000"
+                    style="z-index: 3"><img src="{% static 'images/imac1.png' %}" alt="">
+                </div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                data-x="300"
+                data-y="300"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="4200"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 450px; white-space: normal;">With Launch2Lead you can create a team wih your known ones</div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text nopadding noborder"
+                data-x="400"
+                data-y="450"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="5000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333;">We connect you to your known one</div>
+
+
+            </li>
+            <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="{% static 'images/rev/ken-2-thumb.jpg' %}" data-delay="15000"  data-saveperformance="off"  data-title="Bidding Portal">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/rev/bg5.jpg' %}"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="25000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center top">
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 2 -->
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+                data-x="400"
+                data-y="185"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="1200"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333;">Raise Money</div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                data-x="350"
+                data-y="295"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="2000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 450px; white-space: normal;">Now that you have your dream team for your product, you can raise money from our bidding Portal.</div>
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="508"
+                data-y="405"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="2200"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-large button-rounded tright nomargin"><span>Bidding Portal</span><i class="icon-angle-right"></i></a></div>
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="200"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/2.png' %}" alt="Team"></div>
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="300"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/3.png' %}" alt="Team"></div>
+
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="400"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/4.png'%}" alt="Team"></div>
+
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="500"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/5.png' %}" alt="Team"></div>
+
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="600"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/7.png' %}" alt="Team"></div>
+
+
+                                    <div class="tp-caption customin ltl tp-resizeme"
+                data-x="700"
+                data-y="500"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="400"
+                data-start="4000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/hands/6.png' %}" alt="Team"></div>
+
+            </li>
+
+                            <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="{% static 'images/rev/ken-2-thumb.jpg' %}" data-delay="15000"  data-saveperformance="off"  data-title="Dashboards">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/rev/bg5.jpg' %}"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="25000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center top">
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 2 -->
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="100"
+                data-y="200"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="1000"
+                data-start="400"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-end="4000"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/1.jpg' %}" alt="Team"></div>
+
+
+                <div class="tp-caption customin ltl tp-resizeme"
+                data-x="650"
+                data-y="200"
+                data-customin="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="1000"
+                data-start="400"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-end="4000"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/1.jpg' %}" alt="Team"></div>
+
+                <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                data-x="350"
+                data-y="300"
+                data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="800"
+                data-start="6000"
+                data-easing="easeOutQuad"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.01"
+                data-endelementdelay="0.1"
+                data-endspeed="1000"
+                data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 450px; white-space: normal;">With our "Tool" you can strengthen your pitch and contact our VC's</div>
+
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+var tpj=jQuery;
+tpj.noConflict();
+
+tpj(document).ready(function() {
+
+    var apiRevoSlider = tpj('.tp-banner').show().revolution(
+    {
+        dottedOverlay:"none",
+        delay:9000,
+        startwidth:1140,
+{#        startheight:700,#}
+        hideThumbs:200,
+
+        thumbWidth:100,
+        thumbHeight:50,
+        thumbAmount:3,
+
+        navigationType:"none",
+        navigationArrows:"solo",
+        navigationStyle:"preview4",
+
+        touchenabled:"on",
+        onHoverStop:"on",
+
+        swipe_velocity: 0.7,
+        swipe_min_touches: 1,
+        swipe_max_touches: 1,
+        drag_block_vertical: false,
+
+
+        parallax:"mouse",
+        parallaxBgFreeze:"on",
+        parallaxLevels:[8,7,6,5,4,3,2,1],
+        parallaxDisableOnMobile:"on",
+
+
+        keyboardNavigation:"on",
+
+        navigationHAlign:"center",
+        navigationVAlign:"bottom",
+        navigationHOffset:0,
+        navigationVOffset:20,
+
+        soloArrowLeftHalign:"left",
+        soloArrowLeftValign:"center",
+        soloArrowLeftHOffset:20,
+        soloArrowLeftVOffset:0,
+
+        soloArrowRightHalign:"right",
+        soloArrowRightValign:"center",
+        soloArrowRightHOffset:20,
+        soloArrowRightVOffset:0,
+
+        shadow:0,
+        fullWidth:"off",
+        fullScreen:"on",
+
+        spinner:"spinner0",
+
+        stopLoop:"off",
+        stopAfterLoops:-1,
+        stopAtSlide:-1,
+
+        shuffle:"off",
+
+
+        forceFullWidth:"off",
+        fullScreenAlignForce:"off",
+        minFullScreenHeight:"400",
+
+        hideThumbsOnMobile:"off",
+        hideNavDelayOnMobile:1500,
+        hideBulletsOnMobile:"off",
+        hideArrowsOnMobile:"off",
+        hideThumbsUnderResolution:0,
+
+        hideSliderAtLimit:0,
+        hideCaptionAtLimit:0,
+        hideAllCaptionAtLilmit:0,
+        startWithSlide:0,
+        fullScreenOffsetContainer: ".header",
+        fullScreenOffset:"0px"
+    });
+
+    apiRevoSlider.bind("revolution.slide.onchange",function (e,data) {
+        if( $(window).width() > 992 ) {
+            if( $('#slider').find('ul > li').eq(data.slideIndex-1).hasClass('dark') ){
+                $('#header.transparent-header:not(.sticky-header,.semi-transparent)').addClass('dark');
+                $('#header.transparent-header.sticky-header,#header.transparent-header.semi-transparent.sticky-header').removeClass('dark');
+                $('#header-wrap').removeClass('not-dark');
+            } else {
+                if( $('body').hasClass('dark') ) {
+                    $('#header.transparent-header:not(.semi-transparent)').removeClass('dark');
+                    $('#header.transparent-header:not(.sticky-header,.semi-transparent)').find('#header-wrap').addClass('not-dark');
+                } else {
+                    $('#header.transparent-header:not(.semi-transparent)').removeClass('dark');
+                    $('#header-wrap').removeClass('not-dark');
+                }
+            }
+            SEMICOLON.header.darkLogo();
+        }
+    });
+
+}); //ready
+
+</script>
+
+    <!-- END REVOLUTION SLIDER -->
+{#</section>#}
+</div>
+</div><!-- #wrapper end -->
+
+<!-- Go To Top
+============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- Footer Scripts
+============================================= -->
+<script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+
+</body>
+</html>

@@ -39,8 +39,8 @@
     <![endif]-->
 
 </head>
-<body id="page-top" class="index">
-<div style="position: fixed; left: 0; right: 0; top: 0; bottom: 0;"></div>
+<body id="page-top" >
+{#<div style="position: fixed; left: 0; right: 0; top: 0; bottom: 0;"></div>#}
 
 
     <!-- Navigation -->
@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="{% static 'images/original-3754-6197517.png' %}"></a>
+                <a class="navbar-brand page-scroll" href="/Launch2Lead/"><img src="{% static 'images/original-3754-6197517.png' %}"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,9 +63,21 @@
                     <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="#portfolio">Our Services</a>
-                        </li>
+                        <li class="dropdown">
+                            <a class="data-toggle" data-toggle="dropdown" href="#" >Our Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Contact Venture Capitalist</a> </li>
+                                <li><a href="#">Bidding Portal</a> </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">Dashboards</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Valuation</a> </li>
+                                        <li><a tabindex="-1" href="#">Risk Management</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Knowledge Documents</a> </li>
+                                <li><a href="#">Community Page</a> </li>
+                            </ul>
                         <li>
                             <a class="page-scroll" href="#about">Testimonials</a>
                         </li>
@@ -194,9 +206,9 @@
     <script src="{% static 'js/geometryangle.min.js' %}"></script>
 
     <!--scrollbar -->
-    <script type="text/javascript" src="{% static 'js/scrollToFixed.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/angular-smooth-scroll.min.js' %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-touch.min.js"></script>
+{#    <script type="text/javascript" src="{% static 'js/scrollToFixed.js' %}"></script>#}
+{#	<script type="text/javascript" src="{% static 'js/angular-smooth-scroll.min.js' %}"></script>#}
+{#    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-touch.min.js"></script>#}
 
 </body>
-    </html>
+</html>

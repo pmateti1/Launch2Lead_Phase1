@@ -13,3 +13,6 @@ def index(request):
 
 def KnowledgeDocuments(request):
     return render_to_response("Launch2Lead/knowledge_doc.html", context_instance=RequestContext(request))
+
+def story_animation_slider(request):
+    return render_to_response("Launch2Lead/Launch2Lead_story.html", context_instance=RequestContext(request))

@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'Launch2Lead_v01',
     'authentication',
+
 )
 
 MIDDLEWARE_CLASSES = (
