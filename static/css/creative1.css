@@ -213,3 +213,97 @@
         width: inherit;
         margin-top: -15px;
     }
+
+    /************************************Modal Animation*******************************************/
+
+#myModalanimi .modal-content {
+    position: relative;
+    right: 378px;
+    padding: 15px;
+    /*height: 600px;*/
+    width: 1361px;
+    /*opacity: 0.8;*/
+    background-color: #242424;
+    box-shadow: 0 0 10px 4px;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+#myModalanimi .modal-body {
+    position: relative;
+    right: 24px;
+    padding: 15px;
+    /*height: 600px;*/
+    width: 1374px;
+    /*opacity: 0.8;*/
+    /*background-color: #fec503;*/
+    /*box-shadow: 0 0 10px 4px;*/
+    /*margin: 0 auto;*/
+    /*margin-top: 5%;*/
+    /*border-radius: 5px;*/
+}
+
+#myModalanimi .nav-tabs{
+    font-size: 16px;
+    color: #080808;
+}
+#myModalanimi .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    opacity: 0.95;
+    color: #fec503;
+    cursor: default;
+    background-color:#07582E ;
+    border: 3px solid #07582E;
+    border-bottom-color: transparent;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 2px;
+    line-height: 1.42857143;
+}
+#myModalanimi  .nav-tabs>li>a:hover {
+    opacity: 0.85;
+    color: #fec503;
+    cursor: default;
+    background-color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+    border-bottom-color: transparent;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 2px;
+    line-height: 1.42857143;
+}
+#myModalanimi .nav-tabs>li>a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    font-size: 17px;
+    color: #080808;
+}
+
+#myModalanimi .tab-pane{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 16px;
+}
+#myModalanimi .btn {
+    margin-bottom: 0;
+    font-weight: 600;
+    width: 20%;
+    line-height: 2;
+    font-size: 18px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+#myModalanimi .btn-success {
+    font-size: 16px;
+    color: #fec503;
+    background-color: #07582E;
+    border-color: #07582E;
+}
+#myModalanimi button{
+    background: transparent;
+    border: transparent;
+}
+.js div#preloader {
+    position: fixed; left: 0; top: 0; z-index: 999; width: 100%;
+    height: 100%; overflow: visible;
+    background: #333 image:'../images/preloader.gif' no-repeat center center; }

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" class="js">
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,6 @@
     <link href="{% static 'css/animate.css' %}" rel="stylesheet">
     <link href="{% static 'css/agency.css' %}" rel="stylesheet">
     <link href="{% static 'css/creative1.css' %}" rel="stylesheet">
-    <link href="{% static 'css/animate_slider.css' %}" rel="stylesheet">
 
     <!--Creative background-->
     <link href="{% static 'css/component.css' %}" rel="stylesheet">
@@ -33,7 +32,7 @@
     <link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff' %}" rel="stylesheet">
     <link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff2' %}" rel="stylesheet">
 
-    <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+{#    <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>#}
 
      <script src="{% static 'js/wow.min.js' %}"></script>
      <script>new WOW().init();</script>
@@ -44,21 +43,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-{#<style>#}
-{#    /* use a semi-transparent image for the overlay */#}
-{#  #overlay {#}
-{#    background-image: url("../images/blackice.png");#}
-{#    color:#efefef;#}
-{#    height:450px;#}
-{#  }#}
-{#  /* container for external content. uses vertical scrollbar, if needed */#}
-{#  div.contentWrap {#}
-{#    height:441px;#}
-{#    overflow-y:auto;#}
-{#  }#}
-{#  </style>#}
 </head>
 <body id="page-top" class="index">
+<div id="preloader"></div>
 <div style="position: fixed; left: 0; right: 0; top: 0; bottom: 0;"></div>
 
 
@@ -120,7 +107,7 @@
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-body">
-    <button style="float: right" type="button" data-dismiss="modal"><img style="height: 25px;width: 25px" src="{% static 'images/close.png' %}"></button>
+           <button style="float: right" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <ul id="myTab" class="nav nav-tabs">
             <li><a href="#signin" data-toggle="tab">Sign In</a></li>
             <li><a href="#signup" data-toggle="tab">Register</a></li>
@@ -193,60 +180,24 @@
 
 <!-- Header -->
 <header>
-    <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <div class="main-title">Welcome to Launch2Lead</div>
-            <div class="second-title">We add value to your Startup</div>
-        <div class="third-title">Start your Journey with us! <br />
-            <br /><br />
-        <a href="Launch2Lead_story.html" data-toggle="modal" data-target="#myModalanimi"  class="page-scroll btn btn-xl wow bounce animated" data-wow-delay="0s">Find out More</a></div>
+    <div class="container">
+        <div class="intro-text">
+        <div class="intro-lead-in">Welcome to Launch2Lead</div>
+            <div style="text-align: right;" class="intro-heading1 ">We add value to your Startup</div>
+        <div class="intro-heading ">Start your Journey with us!</div>
+        <a href="Launch2Lead_story.html" data-toggle="modal" data-target="#myModalanimi"  class="page-scroll btn btn-xl wow bounce animated" data-wow-delay="0s">To Know How...<br> Click Here!</a></div>
     </div>
 </header>
 {##}
     <!-- Modal HTML -->
-    <div id="myModalanimi" class="modal fade">
+    <div id="myModalanimi" class="modal fade" >
         <div class="modal-dialog">
             <div class="modal-content">
-                <!-- Content will be loaded here from "remote.php" file -->
+                <!-- Content will be loaded here from "Launch2Lead_story.html" file -->
+
             </div>
         </div>
     </div>
-{#<!-- overlayed element -->#}
-{#<div class="apple_overlay" id="overlay">#}
-{#  <!-- the external content is loaded inside this tag -->#}
-{#  <div class="contentWrap"></div>#}
-{#</div>#}
-{#<script>#}
-{#    $(function() {#}
-{##}
-{#    $("a[rel]").overlay({#}
-{##}
-{#        mask: 'darkred',#}
-{#        effect: 'apple',#}
-{##}
-{#        onBeforeLoad: function() {#}
-{#            // grab wrapper element inside content#}
-{#            var wrap = this.getOverlay().find(".contentWrap");#}
-{##}
-{#            // load the page specified in the trigger#}
-{#            wrap.load(this.getTrigger().attr("href"));#}
-{#        }#}
-{#    });#}
-{#{);#}
-{#</script>#}
-<script>$(document).ready(function(){
-
-    $("a#wrapper").on("click", function(){
-
-  $.post("Launch2Lead_story.html", function(data){
-
-    $("#myModalDiv").html(data).fadeIn();
-
-});
-    });
-
-});
-</script>
 <!-- Our services -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">

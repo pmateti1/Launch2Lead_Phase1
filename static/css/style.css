@@ -15,6 +15,7 @@ dl, dt, dd, ol, ul, li {
 	padding: 0;
 }
 
+
 .clear {
 	clear: both;
 	display: block;
@@ -33,12 +34,6 @@ dl, dt, dd, ol, ul, li {
 
 ::-moz-selection {
 	background: #1ABC9C; /* Firefox */
-	color: #FFF;
-	text-shadow: none;
-}
-
-::-webkit-selection {
-	background: #1ABC9C; /* Safari */
 	color: #FFF;
 	text-shadow: none;
 }
@@ -2662,7 +2657,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 
 .swiper_wrapper {
 	width: 100%;
-	height: 500px;
+	height: 520px;
 	overflow: hidden;
 }
 
@@ -2724,12 +2719,13 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 	width:100%;
 	position:relative;
 	padding:0;
-	height: 450px;
+
 }
 
 .tp-banner{
 	width:100%;
 	position:relative;
+	height: auto;
 }
 
 .tp-banner-fullscreen-container {
@@ -2738,7 +2734,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 	padding:0;
 }
 
-.tp-banner .button { height: auto !important; }
+.tp-banner .button { height: 450px !important; }
 
 .tparrows.preview2:after { line-height: 1 !important; }
 
@@ -4170,7 +4166,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 .portfolio-1.portfolio-fullwidth .portfolio-item .portfolio-image a,
 .portfolio-1.portfolio-fullwidth .portfolio-item .portfolio-image img {
 	width: 1140px;
-	height: 500px;
+	height: 520px;
 }
 
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-1.portfolio-fullwidth .portfolio-item .portfolio-image img {
@@ -4342,13 +4338,13 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-1.portfolio-
 #portfolio.portfolio-parallax .portfolio-item {
 	float: none;
 	width: 100% !important;
-	height: 500px !important;
+	height: 520px !important;
 	margin: 0 !important;
 }
 
 #portfolio.portfolio-parallax .portfolio-item .portfolio-image {
 	width: 100% !important;
-	height: 500px !important;
+	height: 520px !important;
 	background-attachment: fixed;
 }
 
@@ -10028,7 +10024,7 @@ body:not(.device-touch) .rounded-skill {
 .owl-carousel.owl-loading {
 	display:block;
 	min-height: 100px;
-	background: url('images/preloader.gif') no-repeat center center
+	background: url('../images/preloader.gif') no-repeat center center
 }
 
 .owl-carousel.owl-hidden { opacity:0 }

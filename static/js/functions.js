@@ -295,7 +295,7 @@ var SEMICOLON = SEMICOLON || {};
 					if( element.parents('.full-screen').length > 0 ) { scrHeight = element.parents('.full-screen').height(); }
 
 					if( $body.hasClass('device-xs') || $body.hasClass('device-xxs') ) {
-						if( !element.hasClass('force-full-screen') ){ scrHeight = 'auto'; }
+						if( !element.hasClass('force-full-screen') ){ scrHeight = '580px'; }
 					}
 
 					element.css('height', scrHeight);
@@ -346,7 +346,7 @@ var SEMICOLON = SEMICOLON || {};
 						maxHeight = 0;
 					});
 				} else {
-					$testimonialsGridEl.find("li").css({ 'height': 'auto' });
+					$testimonialsGridEl.find("li").css({ 'height': '580px' });
 				}
 			}
 		},
