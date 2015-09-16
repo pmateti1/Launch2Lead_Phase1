@@ -4,6 +4,7 @@ from authentication import views
 
 urlpatterns = [
     url(r'^$', views.Authenticate_1, name='register'),
+    url(r'^$', views.Authenticate_base, name='register1'),
     url(r'^logout/$', views.LogoutRequest, name='logout'),
     url(r'^recover/$', views.reset, name='reset'),
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',

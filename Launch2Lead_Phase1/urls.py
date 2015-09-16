@@ -18,9 +18,9 @@ from django.contrib import admin
 from Launch2Lead_v01 import views
 
 urlpatterns = [
-    url(r'^Launch2Lead/', include('authentication.urls')),
-    url(r'^Launch2Lead/', include('Launch2Lead_v01.urls')),
+    url(r'^', include('authentication.urls')),
+    url(r'^', include('Launch2Lead_v01.urls')),
     url(r'^$', views.index, name='index'),
-    url(r'^Launch2Lead/Launch2Lead_story', views.story_animation_slider, name='storyanimi'),
+    url(r'^Launch2Lead_story', views.story_animation_slider, name='storyanimi'),
     url(r'^admin/', include(admin.site.urls)),
 ]
