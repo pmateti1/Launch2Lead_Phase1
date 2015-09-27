@@ -119,7 +119,7 @@
 }
 
 .blog-post-alt-date {
-  color: #999999;
+  color: black;
   font-size: 13px;
   font-weight: 500;
   font-style: italic;
@@ -133,10 +133,11 @@
 
 
 .blog-post-alt-title h2,.blog-post-alt-title h2 a {
-  color: rgb(89, 89, 89);
+  color: #fec503;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
+	text-align: center;
 }
 
 .blog-post-alt-title h3 a {
@@ -167,7 +168,7 @@
 }
 
 .blog-post-alt-read-more a {
-  background-color: #fd707a;
+  background-color: #fec503;
   border-width: 0;
   border-style: solid solid solid solid;
   border-radius: 30px;
@@ -334,6 +335,9 @@
 
 			.blog-post-alt-date {
 				line-height: 1;
+				color: #171515;
+				text-align: center;
+				margin-top: 7px;
 			}
 
 			.blog-post-alt-title {
@@ -342,10 +346,11 @@
 
 				.blog-post-alt-title h2 {
 					margin-bottom: 0;
+					color: #fec503;
 				}
 
 				.blog-post-alt-title a {
-					color: inherit;
+					color: #fec503;
 				}
 
 			.blog-post-alt-cat {
@@ -362,7 +367,8 @@
 				right: 0;
 				top: 100%;
 				opacity: 0;
-				margin-top: 18px;
+				margin-top: -55px;
+				text-align: center;
 				line-height: 1;
 			}
 
