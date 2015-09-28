@@ -309,11 +309,71 @@
     background: #333 image:'../images/preloader.gif' no-repeat center center; }
 
 #blog .header1{
-    color: #FFffff;
+    color: #fec503;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform:uppercase;
-    font-weight:700;
+    font-weight:800;
     letter-spacing:1px;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -20px;
+    background-color: #FFffff;
+    border-radius: 5px;
+    position: relative;
+    padding: 3px ;
+    width: 200px;
+    left: 45%;
 }
+
+#navblog .nav-tabs{
+    font-size: 11px;
+    border-color: #fec503;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:1px;
+    text-align: center;
+
+}
+#navblog .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    opacity: 0.95;
+    color: #FFffff;
+    cursor: default;
+    background-color: #fec503 ;
+    border: 3px solid #fec503;
+    border-bottom-color: transparent;
+    /*border-radius: 5px;*/
+    /*font-size: large;*/
+    margin-right: 2px;
+    line-height: 1.42857143;
+text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:1px;
+    text-align: center;
+}
+#navblog  .nav-tabs>li>a:hover {
+    opacity: 0.85;
+    color: #fec503;
+    cursor: default;
+    background-color: transparent;
+    border: 1px solid #fec503;
+    border-bottom-color: transparent;
+    border-radius: 1px;
+    font-size: 13px;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:1px;
+    text-align: center;
+}
+#navblog .nav-tabs>li>a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    font-size: 13px;
+    color: #fec503;
+    padding: 10px 80px;
+text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:1px;
+    text-align: center;}
