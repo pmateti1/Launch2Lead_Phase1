@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_markdown',
     'Launch2Lead_v01',
     'authentication',
     'knowledge_documents'
