@@ -31,12 +31,14 @@ AUTH_PROFILE_MODULE = 'authentication.UserProfile'
 # Application definition
 
 INSTALLED_APPS = (
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_markdown',
     'Launch2Lead_v01',
     'authentication',
     'knowledge_documents'
