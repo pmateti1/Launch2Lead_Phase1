@@ -18,7 +18,7 @@ class Market_Research(models.Model):
     def __unicode__(self):
         return '%s' % self.title
 
-class Published_Posts(models.Model):
+class Published_Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     posted = models.DateField(db_index=True, auto_now_add=True)
@@ -30,7 +30,7 @@ class Published_Posts(models.Model):
     def __unicode__(self):
         return '%s' % self.title
 
-class Essential_Formats(models.Model):
+class Essential_Format(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     posted = models.DateField(db_index=True, auto_now_add=True)

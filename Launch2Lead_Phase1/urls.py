@@ -17,8 +17,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from Launch2Lead_v01 import views
 
+
 urlpatterns = [
     url(r'^', include('authentication.urls')),
+    url(r'^', include('knowledge_documents.urls')),
     url(r'^', include('Launch2Lead_v01.urls')),
     url(r'^$', views.index, name='index'),
     url(r'^Launch2Lead_story', views.story_animation_slider, name='storyanimi'),
