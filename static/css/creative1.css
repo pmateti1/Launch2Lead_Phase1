@@ -4,12 +4,13 @@
     height: inherit;
     width: inherit;
     margin-top: -15px;
-    }
+}
 
-#portfolio .portfolio-item img{
+#portfolio .portfolio-item img {
     height: 289px;
     width: 400px;
 }
+
 /************************************Modal Login/Registration*******************************************/
 #myModal .modal-body {
     position: relative;
@@ -23,15 +24,17 @@
     margin-top: 8%;
     border-radius: 5px;
 }
-#myModal .nav-tabs{
+
+#myModal .nav-tabs {
     font-size: 16px;
     color: #080808;
 }
-#myModal .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+
+#myModal .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
     opacity: 0.95;
     color: #fec503;
     cursor: default;
-    background-color:#07582E ;
+    background-color: #07582E;
     border: 3px solid #07582E;
     border-bottom-color: transparent;
     border-radius: 5px;
@@ -39,7 +42,8 @@
     margin-right: 2px;
     line-height: 1.42857143;
 }
-#myModal  .nav-tabs>li>a:hover {
+
+#myModal .nav-tabs > li > a:hover {
     opacity: 0.85;
     color: #fec503;
     cursor: default;
@@ -51,18 +55,20 @@
     margin-right: 2px;
     line-height: 1.42857143;
 }
-#myModal .nav-tabs>li>a{
+
+#myModal .nav-tabs > li > a {
     margin-right: 2px;
     line-height: 1.42857143;
     font-size: 17px;
     color: #080808;
 }
 
-#myModal .tab-pane{
+#myModal .tab-pane {
     margin-top: 6%;
     text-align: center;
     font-size: 16px;
 }
+
 #myModal .btn {
     margin-bottom: 0;
     font-weight: 600;
@@ -79,24 +85,31 @@
     background-color: #07582E;
     border-color: #07582E;
 }
-#myModal button{
+
+#myModal button {
     background: transparent;
     border: transparent;
 }
+
 /****************************************Dropdown***********************************************/
 
 .dropdown .dropdown-menu {
     /*display: block;*/
     background-color: #222222;
-    color:#fec503;
+    color: #fec503;
 }
-.dropdown>a:after {
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown > a:after {
     display: block;
     content: "";
     float: right;
     width: 0;
     height: 0;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-right: -10px;
     border: 4px solid transparent;
     border-top: 4px solid white;
@@ -109,18 +122,22 @@
     position: relative;
 }
 
-.dropdown-submenu>.dropdown-menu {
+.dropdown-submenu > .dropdown-menu {
     top: 0;
     left: 100%;
-    width: 10px;
 }
 
-.dropdown-submenu:hover>.dropdown-menu {
+.dropdown-submenu:hover > .dropdown-menu {
     display: block;
-    width: 10px;
 }
 
-.dropdown-submenu>a:after {
+.dropdown-submenu:hover > .dropdown-menu>li>a {
+    width: auto;
+    margin-left: -7px
+}
+
+
+.dropdown-submenu > a:after {
     display: block;
     content: "";
     float: right;
@@ -128,93 +145,121 @@
     height: 0;
     border-color: transparent;
     border-style: solid;
-    border-width: 5px 0 5px 5px;
+    border-width: 3px 0 3px 3px;
     border-left-color: #ccc;
     margin-top: 5px;
     margin-right: -10px;
 }
+
 /***************************************************NavBar*********************************************/
 .navbar-base {
-    background-color:#222;
-    border-color:transparent
-    padding:10px 0;
+
+    background-color: #222;
+    border-color: transparent padding : 10 px 0;
 }
-.navbar-base .navbar-brand{
-    color:#fed136;
-    font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
-.navbar-base .navbar-brand:hover,.navbar-base .navbar-brand:focus,.navbar-base .navbar-brand:active,
-.navbar-base .navbar-brand.active{
-    color:#fec503;
+
+.navbar-base .navbar-brand {
+    color: #fed136;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+
+}
+
+.navbar-base .navbar-brand:hover, .navbar-base .navbar-brand:focus, .navbar-base .navbar-brand:active,
+.navbar-base .navbar-brand.active {
+    color: #fec503;
     background-color: transparent;
-    }
-.navbar-base .navbar-collapse{
-    border-color:rgba(255,255,255,.02)}
-.navbar-base .navbar-toggle{
-    background-color:#fed136;
-    border-color:#fed136
+
 }
-.navbar-base .navbar-toggle .icon-bar{
-    background-color:#242424}
-.navbar-base .navbar-toggle:hover,.navbar-base .navbar-toggle:focus{
-    background-color:#fed136}
-.navbar-base .nav li a{
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform:uppercase;
-    font-weight:600;
-    letter-spacing:1px;
-    color:#fff;
+
+.navbar-base .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+
+.navbar-base .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136
+}
+
+.navbar-base .navbar-toggle .icon-bar {
+    background-color: #242424
+}
+
+.navbar-base .navbar-toggle:hover, .navbar-base .navbar-toggle:focus {
+    background-color: #fed136
+}
+
+.navbar-base .nav li a {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
     background-color: transparent;
 }
-.navbar-base .navbar-nav>.active>a{
-    border-radius:0;
-    color:#fff;
-    background-color:#fed136
-}
-.navbar-base .nav li a:hover,.navbar-base .nav li a:focus{
-    color:#fed136;outline:0}
-.navbar-base .navbar-nav>.active>a{
-    border-radius:0;
-    color:#fff;
-    background-color:#fed136
+
+.navbar-base .navbar-nav > .active > a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136
 }
 
-    .navbar-base .navbar-header .navbar-brand img {
-        height: inherit;
-        width: inherit;
-        margin-top: -15px;
+.navbar-base .nav li a:hover, .navbar-base .nav li a:focus {
+    color: #fed136;
+    outline: 0
+}
+
+.navbar-base .navbar-nav > .active > a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136
+}
+
+.navbar-base .navbar-header .navbar-brand img {
+    height: inherit;
+    width: inherit;
+    margin-top: -15px;
+}
+
+.navbar-default .navbar-header .navbar-brand img {
+    height: inherit;
+    width: inherit;
+    margin-top: -15px;
+}
+
+@media (min-width: 768px) {
+    .navbar-base {
+        background-color: #222;
+        padding: 10px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
     }
 
-    .navbar-default .navbar-header .navbar-brand img {
-        height: inherit;
-        width: inherit;
-        margin-top: -15px;
-    }
-@media (min-width:768px){
-    .navbar-base{
-        background-color:#222;
-        padding:10px 0;
-        -webkit-transition:padding .3s;
-        -moz-transition:padding .3s;
-        transition:padding .3s;
-        border:0}
-    .navbar-base .navbar-brand{
-        font-size:2em;-webkit-transition:all .3s;
-        -moz-transition:all .3s;
-        transition:all .3s}
-    .navbar-base .navbar-nav>.active>a{
-        border-radius:3px}
-
-
-    .navbar-base.navbar-shrink .navbar-brand{font-size:1.5em}}
-
-
-    .navbar-base .navbar-header .navbar-brand img {
-        height: inherit;
-        width: inherit;
-        margin-top: -15px;
+    .navbar-base .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
     }
 
-    /************************************Modal Animation*******************************************/
+    .navbar-base .navbar-nav > .active > a {
+        border-radius: 3px
+    }
+
+    .navbar-base.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+}
+
+.navbar-base .navbar-header .navbar-brand img {
+    height: inherit;
+    width: inherit;
+    margin-top: -15px;
+}
+
+/************************************Modal Animation*******************************************/
 
 #myModalanimi .modal-content {
     position: relative;
@@ -229,6 +274,7 @@
     margin-top: 5%;
     border-radius: 5px;
 }
+
 #myModalanimi .modal-body {
     position: relative;
     right: 24px;
@@ -243,15 +289,16 @@
     /*border-radius: 5px;*/
 }
 
-#myModalanimi .nav-tabs{
+#myModalanimi .nav-tabs {
     font-size: 16px;
     color: #080808;
 }
-#myModalanimi .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+
+#myModalanimi .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
     opacity: 0.95;
     color: #fec503;
     cursor: default;
-    background-color:#07582E ;
+    background-color: #07582E;
     border: 3px solid #07582E;
     border-bottom-color: transparent;
     border-radius: 5px;
@@ -259,7 +306,8 @@
     margin-right: 2px;
     line-height: 1.42857143;
 }
-#myModalanimi  .nav-tabs>li>a:hover {
+
+#myModalanimi .nav-tabs > li > a:hover {
     opacity: 0.85;
     color: #fec503;
     cursor: default;
@@ -271,18 +319,20 @@
     margin-right: 2px;
     line-height: 1.42857143;
 }
-#myModalanimi .nav-tabs>li>a{
+
+#myModalanimi .nav-tabs > li > a {
     margin-right: 2px;
     line-height: 1.42857143;
     font-size: 17px;
     color: #080808;
 }
 
-#myModalanimi .tab-pane{
+#myModalanimi .tab-pane {
     margin-top: 6%;
     text-align: center;
     font-size: 16px;
 }
+
 #myModalanimi .btn {
     margin-bottom: 0;
     font-weight: 600;
@@ -299,81 +349,100 @@
     background-color: #07582E;
     border-color: #07582E;
 }
-#myModalanimi button{
+
+#myModalanimi button {
     background: transparent;
     border: transparent;
 }
-.js div#preloader {
-    position: fixed; left: 0; top: 0; z-index: 999; width: 100%;
-    height: 100%; overflow: visible;
-    background: #333 image:'../images/preloader.gif' no-repeat center center; }
 
-#blog .header1{
-    color: #fec503;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #333 image : '../images/preloader.gif' no-repeat center center;
+}
+
+#blog .header1 {
+    color: #FFFFFF;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
     text-align: center;
     margin-top: -20px;
-    background-color: #FFffff;
-    border-radius: 5px;
+    background-color: #222222;
+    /*border-radius: 5px;*/
     position: relative;
-    padding: 3px ;
-    width: 200px;
+    padding: 3px;
+    width: 160px;
     left: 45%;
 }
 
-#navblog .nav-tabs{
-    font-size: 11px;
+#navblog .nav-tabs {
+    font-size: 17px;
+    border-width: 2px;
     border-color: #fec503;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
     text-align: center;
 
 }
-#navblog .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+
+#navblog .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
     opacity: 0.95;
     color: #FFffff;
     cursor: default;
-    background-color: #fec503 ;
-    border: 3px solid #fec503;
+    background-color: #fec503;
+    border: 2px solid #fec503;
+    border-radius: 0;
     border-bottom-color: transparent;
-    /*border-radius: 5px;*/
-    /*font-size: large;*/
     margin-right: 2px;
     line-height: 1.42857143;
-text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-align: center;
 }
-#navblog  .nav-tabs>li>a:hover {
+
+#navblog .nav-tabs > li > a:hover {
     opacity: 0.85;
     color: #fec503;
     cursor: default;
     background-color: transparent;
-    border: 1px solid #fec503;
+    border: 2px solid #fec503;
     border-bottom-color: transparent;
-    border-radius: 1px;
-    font-size: 13px;
+    font-size: 17px;
     margin-right: 2px;
     line-height: 1.42857143;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-align: center;
 }
-#navblog .nav-tabs>li>a{
+
+#navblog .nav-tabs > li > a {
     margin-right: 2px;
     line-height: 1.42857143;
-    font-size: 13px;
+    font-size: 17px;
     color: #fec503;
-    padding: 10px 80px;
-text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
-    text-align: center;}
+    padding: 7px 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media (min-width: 992px){
+#homeBLog .col-md-4 {
+    width: 33.33333333%;
+    padding-top: 40px;
+}}

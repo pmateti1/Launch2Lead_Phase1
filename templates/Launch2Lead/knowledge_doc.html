@@ -2,358 +2,390 @@
 {% block content %}
     {% load staticfiles %}
 
+    <!-- carousel for Trending Posts -->
     <section id="blog" style="background-image:url({% static 'images/bg_2.jpg' %});border: thin;height:470px;">
         <div class="header1">Trending Post</div>
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <div id="owl-demo" class="owl-carousel owl-theme" style="margin:0 auto;margin-top: 10px">
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+        {#        <div class="container">#}
+        <div class="row" style=" margin-right:15px;margin-left:15px">
+            <div class="span12">
+                <div id="owl-demo" class="owl-carousel owl-theme" style="margin:0 auto;margin-top: 10px;">
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg1.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg1.jpg' %}">
+                                    </a>
                                 </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
+                                </div>
 
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
                             </div>
                         </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg2.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg2.jpg' %}">
+                                    </a>
                                 </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
+                                </div>
 
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
                             </div>
                         </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg3.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg3.jpg' %}">
                                     </a>
+                                </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
-                        item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg4.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
-                                    </a>
-                                </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
                             </div>
                         </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg5.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg4.jpg' %}">
                                     </a>
+                                </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
-                        item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg1.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
-                                    </a>
-                                </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
                             </div>
                         </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg2.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg5.jpg' %}">
                                     </a>
+                                </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
                                 </div>
                             </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
+                            </div>
                         </div>
-                        <div class="owl-item">
-                            <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
                         item" style="background-color: #FFffff">
-                                <div class="blog-post-alt-thumb">
-                                    <div class="blog-post-alt-thumb-inner dslca-post-thumb">
-                                        <a href="#">
-                                            <img src="{% static 'images/bg3.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="blog-post-alt-thumb-cover"></div>
-                                </div>
-                                <div class="blog-post-alt-main-inner" style="min-height: 79px">
-                                    <div class="blog-post-alt-date">20 Jul 2010</div>
-                                    <div class="blog-post-alt-title">
-                                        <h2><a href="#">Blog Post with Image</a></h2>
-                                    </div>
-                                </div>
-                                <div class="blog-post-alt-read-more">
-                                    <a href="#">"READ ARTICLE"
-                                        <span class="fa-long-arrow-right"></span>
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg1.jpg' %}">
                                     </a>
                                 </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
+                                </div>
+                            </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                        item" style="background-color: #FFffff">
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg2.jpg' %}">
+                                    </a>
+                                </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
+                                </div>
+                            </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="dslc-post blog-post-alt dslc-carousel-item dslc-3-col dslc-post-format-standard
+                        item" style="background-color: #FFffff">
+                            <div class="blog-post-alt-thumb">
+                                <div class="blog-post-alt-thumb-inner dslca-post-thumb">
+                                    <a href="#">
+                                        <img src="{% static 'images/bg3.jpg' %}">
+                                    </a>
+                                </div>
+                                <div class="blog-post-alt-thumb-cover"></div>
+                            </div>
+                            <div class="blog-post-alt-main-inner" style="min-height: 79px">
+                                <div class="blog-post-alt-date">20 Jul 2010</div>
+                                <div class="blog-post-alt-title">
+                                    <h2><a href="#">Blog Post with Image</a></h2>
+                                </div>
+                            </div>
+                            <div class="blog-post-alt-read-more">
+                                <a href="#">"READ ARTICLE"
+                                    {#                                        <span class="fa-long-arrow-right"></span>#}
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {#            </div>#}
         </div>
     </section>
 
     <!-- NAV Tabs -->
     <section id="navblog">
-    <div class="col-md-12" style="margin-top: -75px;text-align: center">
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a class="btn-lg" data-toggle="tab" href="#" aria-expanded="true">Market Research</a>
-            </li>
-            <li>
-                <a class="btn-lg" data-toggle="tab" href="#" aria-expanded="true">Published Post</a>
-            </li>
-            <li>
-                <a class="btn-lg" data-toggle="tab" href="#" aria-expanded="true">Essential Formats</a>
-            </li>
-{#        </ul>#}
-{#        <div class="" id="BlogNav" style="margin-top: -85px;margin-left: 25px">#}
-{#            <button type="button" class="btn-default">Market Research</button>#}
-{#            <button type="button" class="btn-default">Published Post</button>#}
-{#            <button type="button" class="btn-default">Essential Formats</button>#}
-{#        </div>#}
+        <div class="col-md-12" style="margin-top: -55px;text-align: center">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a class="btn-lg" data-toggle="tab" href="#homeBLog" aria-expanded="true">Market Research</a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="tab" href="#homeBLog_published" aria-expanded="true">Published
+                        Post</a>
+                </li>
+                <li>
+                    <a class="btn-lg" data-toggle="tab" href="#homeBLog_formats" aria-expanded="true">Essential
+                        Formats</a>
+                </li>
             </ul>
-        </div>
-    </section>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="homeBLog">
+                    <div class="row" style=" font-family:Helvetica, Arial, sans-serif;">
+                        <div class="col-lg-12 col-mg-12">
+                            <div class="homBlog-area">
+                                <!-- Start Home Blog Content -->
+                                <div class="homeBlog-content" style="margin-top: -70px; text-align: left">
+                                    <div class="row">
+                                        {#                                {% if category in posts = "Market Research" %}#}
+                                        {% if posts.category = "Market Research" %}
+                                            {% for post in posts %}
+                                                <!-- Start Single Blog -->
+                                                <div class="col-md-4 col-sm-6">
+                                                    <div class="single-Blog">
+                                                        <div class="single-blog-left">
+                                                            <ul class="blog-comments-box">
+                                                                <li>May <h2>10</h2>2015</li>
+                                                                <li><span class="fa fa-eye"></span>1523</li>
+                                                                <li><a><span class="fa
+                                                fa-comments"></span>5</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="single-blog-right">
+                                                            <div class="blog-img">
+                                                                <figure class="blog-figure">
+                                                                    <a href="{% url 'entry_detail' slug=post.slug %}"><img
+                                                                            src="{{ post.picture }}"
+                                                                            alt="img"></a>
+                                                                    <span class="image-effect"></span>
+                                                                </figure>
+                                                            </div>
+                                                            <div class="blog-author">
+                                                                <ul>
 
-    <section id="homeBLog" style="margin-left: 150px">
-        <div class="container">
-            <div class="row" style=" font-family:Helvetica, Arial, sans-serif;">
-                <div class="col-lg-12 col-md-12">
-                    <div class="homBlog-area" >
-                        <!-- Start Home Blog Content -->
-                        <div class="homeBlog-content" style="margin-top: -170px">
-                            <div class="row">
-                                <!-- Start Single Blog -->
-                                <div class="col-lg-3 col-md-3 col-sm-3">
-                                    <div class="single-Blog">
-                                        <div class="single-blog-left">
-                                            <ul class="blog-comments-box">
-                                                <li>May <h2>10</h2>2015</li>
-                                                <li><span class="fa fa-eye"></span>1523</li>
-                                                <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="single-blog-right">
-                                            <div class="blog-img">
-                                                <figure class="blog-figure">
-                                                    <a href="#"><img src="{% static 'images/background1.jpg' %}"
-                                                                     alt="img"></a>
-                                                    <span class="image-effect"></span>
-                                                </figure>
-                                            </div>
-                                            <div class="blog-author">
-                                                <ul>
-                                                    <li>By <a href="#">Dr. Smith</a></li>
-                                                    <li>In <a href="#">Dental</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="blog-content">
-                                                <h2>Latest Trend Of Medical Dental Department</h2>
+                                                                    <li>By <a>{{ post.posted_by }}</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="blog-content">
+                                                                <h2>{{ post.title }}</h2>
 
-                                                <p>There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form, by injected
-                                                    humour, or randomised words which don't look even slightly
-                                                    believable.</p>
+                                                                <p>{{ post.short_body }}</p>
 
-                                                <div class="readmore_area">
-                                                    <a href="#" data-hover="Read More"><span>Read More</span></a>
+                                                                <div class="readmore_area" style="margin-top: 5px">
+                                                                    <a href="{% url 'entry_detail' slug=post.slug %}"
+                                                                       data-hover="Read More"><span>Read More</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            {% endfor %}
+                                        {% endif %}
                                     </div>
                                 </div>
-                                <!-- Start Single Blog -->
-                                <div class="col-lg-3 col-md-3 col-sm-3">
-                                    <div class="single-Blog">
-                                        <div class="single-blog-left">
-                                            <ul class="blog-comments-box">
-                                                <li>May <h2>10</h2>2015</li>
-                                                <li><span class="fa fa-eye"></span>1523</li>
-                                                <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="single-blog-right">
-                                            <div class="blog-img">
-                                                <figure class="blog-figure">
-                                                    <a href="#"><img src="{% static 'images/background2.jpg' %}"
-                                                                     alt="img"></a>
-                                                    <span class="image-effect"></span>
-                                                </figure>
-                                            </div>
-                                            <div class="blog-author">
-                                                <ul>
-                                                    <li>By <a href="#">Dr. Smith</a></li>
-                                                    <li>In <a href="#">Dental</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="blog-content">
-                                                <h2>Latest Trend Of Medical Dental Department</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="homeBLog_published">
+                    <div class="row" style=" font-family:Helvetica, Arial, sans-serif;">
+                        <div class="col-lg-12 col-mg-12">
+                            <div class="homBlog-area">
+                                <!-- Start Home Blog Content -->
+                                <div class="homeBlog-content" style=" text-align: left">
+                                    <div class="row">
+                                        {% for post in posts %}
+                                            <!-- Start Single Blog -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-Blog">
+                                                    <div class="single-blog-left">
+                                                        <ul class="blog-comments-box">
+                                                            <li>June <h2>10</h2>2015</li>
+                                                            <li><span class="fa fa-eye"></span>1523</li>
+                                                            <li><a><span class="fa
+                                                fa-comments"></span>5</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="single-blog-right">
+                                                        <div class="blog-img">
+                                                            <figure class="blog-figure">
+                                                                <a href="{% url 'entry_detail' slug=post.slug %}"><img
+                                                                        src="{{ post.picture }}"
+                                                                        alt="img"></a>
+                                                                <span class="image-effect"></span>
+                                                            </figure>
+                                                        </div>
+                                                        <div class="blog-author">
+                                                            <ul>
 
-                                                <p>There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form, by injected
-                                                    humour, or randomised words which don't look even slightly
-                                                    believable.</p>
+                                                                <li>By <a>{{ post.posted_by }}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <h2>{{ post.title }}</h2>
 
-                                                <div class="readmore_area">
-                                                    <a href="#" data-hover="Read More"><span>Read More</span></a>
+                                                            <p>{{ post.short_body }}</p>
+
+                                                            <div class="readmore_area" style="margin-top: 5px">
+                                                                <a href="{% url 'entry_detail' slug=post.slug %}"
+                                                                   data-hover="Read More"><span>Read More</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
-                                <!-- Start Single Blog -->
-                                <div class="col-lg-3 col-md-3 col-sm-3">
-                                    <div class="single-Blog">
-                                        <div class="single-blog-left">
-                                            <ul class="blog-comments-box">
-                                                <li>May <h2>10</h2>2015</li>
-                                                <li><span class="fa fa-eye"></span>1523</li>
-                                                <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="single-blog-right">
-                                            <div class="blog-img">
-                                                <figure class="blog-figure">
-                                                    <a href="#"><img src="{% static 'images/background3.jpg' %}"
-                                                                     alt="img"></a>
-                                                    <span class="image-effect"></span>
-                                                </figure>
-                                            </div>
-                                            <div class="blog-author">
-                                                <ul>
-                                                    <li>By <a href="#">Dr. Smith</a></li>
-                                                    <li>In <a href="#">Dental</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="blog-content">
-                                                <h2>Latest Trend Of Medical Dental Department</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="homeBLog_formats">
+                    <div class="row" style=" font-family:Helvetica, Arial, sans-serif;">
+                        <div class="col-lg-12 col-mg-12">
+                            <div class="homBlog-area">
+                                <!-- Start Home Blog Content -->
+                                <div class="homeBlog-content" style=" text-align: left">
+                                    <div class="row">
 
-                                                <p>There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form, by injected
-                                                    humour, or randomised words which don't look even slightly
-                                                    believable.</p>
+                                        {% for post in posts %}
+                                            <!-- Start Single Blog -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-Blog">
+                                                    <div class="single-blog-left">
+                                                        <ul class="blog-comments-box">
+                                                            <li>May <h2>10</h2>2015</li>
+                                                            <li><span class="fa fa-eye"></span>1523</li>
+                                                            <li><a><span class="fa
+                                                fa-comments"></span>5</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="single-blog-right">
+                                                        <div class="blog-img">
+                                                            <figure class="blog-figure">
+                                                                <a href="{% url 'entry_detail' slug=post.slug %}"><img
+                                                                        src="{{ post.picture }}"
+                                                                        alt="img"></a>
+                                                                <span class="image-effect"></span>
+                                                            </figure>
+                                                        </div>
+                                                        <div class="blog-author">
+                                                            <ul>
 
-                                                <div class="readmore_area">
-                                                    <a href="#" data-hover="Read More"><span>Read More</span></a>
+                                                                <li>By <a>{{ post.posted_by }}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <h2>{{ post.title }}</h2>
+
+                                                            <p>{{ post.short_body }}</p>
+
+                                                            <div class="readmore_area" style="margin-top: 5px">
+                                                                <a href="{% url 'entry_detail' slug=post.slug %}"
+                                                                   data-hover="Read More"><span>Read More</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
@@ -363,21 +395,46 @@
             </div>
         </div>
     </section>
+
+
+
+    <section>
+
+        <div class="blog-pagination">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span class="fa fa-angle-left"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
 
     <!-- jQuery -->
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
     <script src="{% static 'js/owl.carousel.js' %}"></script>
 
+    <!-- stylesheet and jquery for Carousel-->
     <style>
         #owl-demo .owl-item {
-{#            margin: 3px;#}
-{#            border: solid;#}
-            border-width: 1px;
-            border-color: #3c3c3c;
-            border-right-style: solid ;
-            border-left-style: solid ;
-            height: 310px;
+            border: 1px #3c3c3c;
+            border-right-style: solid;
+        {#            border-left-style: solid;#} height: 310px;
         }
 
         #owl-demo .item img {
@@ -385,13 +442,14 @@
             height: 224px;
             width: 100%;
             display: block;
-        {#  width: 100%;#}{#  height: 300px;#}
+
         }
     </style>
     <script>$(document).ready(function () {
         $("#owl-demo").owlCarousel({
 
-            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            autoPlay: 4000, //Set AutoPlay to 3 seconds
+            pause: "hover",
             items: 5,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 3]
@@ -399,6 +457,6 @@
         });
 
     });
-
     </script>
+
 {% endblock content %}

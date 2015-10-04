@@ -39,7 +39,7 @@ body,html{
   overflow-x:hidden;
 }
 body {
-font-family: 'Habibi', serif;
+font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 overflow-x: hidden !important;
 }
 
@@ -63,7 +63,7 @@ h3,
 h4,
 h5,
 h6{
-	font-family: 'Raleway', sans-serif;	
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 h2 {
   color: #313338;  
@@ -235,7 +235,7 @@ img{
 .top-slider .slick-next::before {
 	
   content: "\f105";
-  font-family: FontAwesome;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   font-size: 25px;
   left: 4px;
   margin-right: 5px;
@@ -243,7 +243,7 @@ img{
 }
 .top-slider .slick-prev::before {	
   content: "\f104";
-  font-family: FontAwesome;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   font-size: 25px;
   left: 1px;
   margin-right: 5px;
@@ -778,7 +778,7 @@ img{
   border-radius: 10px;
   display: inline;
   float: left;
-  font-family: "Raleway",sans-serif;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   padding: 10px 5px 20px;
   width: 100%;
   position: relative;
@@ -1161,8 +1161,8 @@ img{
 /*--------------------*/
 
 #homeBLog{
-	float: left;
-	display: inline;
+	float: inherit;
+	/*display: inline;*/
 	width: 100%;
 	padding: 75px 0;
 }
@@ -1185,7 +1185,7 @@ img{
 .single-blog-left{
 	float: left;
 	display: inline;
-	width: 18%;
+	width: 14%;
 }
 .blog-comments-box li {
   border-bottom: 1px solid #fec503;
@@ -1563,7 +1563,7 @@ figure.blog-figure:hover .image-effect::before {
 	float: left;
 	display: inline;
 	width: 100%;
-	text-align: right;
+	text-align: center;
 }
 .blog-pagination .pagination > li > a,
 .blog-pagination .pagination > li > span {
@@ -1574,7 +1574,7 @@ figure.blog-figure:hover .image-effect::before {
 	line-height: 1.42857;
 	margin-left: 6px;
 	padding: 6px 15px;
-	font-family: "Raleway",sans-serif; 
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -1585,6 +1585,7 @@ figure.blog-figure:hover .image-effect::before {
 .blog-pagination .pagination > li > span:focus,
 .blog-pagination .pagination > li > span:hover {
   color: #fff;
+	background-color: #fec503;
 }
 .blog-pagination .pagination > li:last-child > a,
 .blog-pagination .pagination > li:last-child > span {
@@ -1731,7 +1732,7 @@ width: 100%;
 }
 .blog-details blockquote::before {
   content: "\"";
-  font-family: "Raleway",sans-serif;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   font-size: 150px;
   font-style: italic;
   line-height: 130px;
@@ -1741,7 +1742,7 @@ width: 100%;
 }
 .blog-details blockquote::after {
   content: "\"";
-  font-family: "Raleway",sans-serif;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
   font-size: 150px;
   font-style: italic;
   left: -35px;
@@ -1802,8 +1803,10 @@ width: 100%;
 }
 .social-share ul li{
 	display: inline-block;
+
 }
 .social-share ul li > a {  
+	background-color: #fec503;
 	display: inline-block;
 	text-align: center;
 	width: 30px;
@@ -2001,7 +2004,7 @@ width: 100%;
 }
 .comments-pagination{
 	display: inline-block;
-	text-align: left;
+	text-align: ce;
 }
 .comments-pagination li{
 	display: inline-block;	

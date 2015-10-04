@@ -5,3 +5,4 @@ class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'email')
 
 admin.site.register(UserProfile, UserProfileAdmin)
+

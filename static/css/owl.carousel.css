@@ -128,13 +128,13 @@
 }
 
 .blog-post-alt-title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 
 .blog-post-alt-title h2,.blog-post-alt-title h2 a {
   color: #fec503;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 16px;
 	text-align: center;
@@ -146,7 +146,7 @@
   font-weight: 600;
 
   line-height: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .blog-post-alt-cat {
@@ -154,7 +154,7 @@
   font-size: 12px;
   font-weight: 600;
   font-style: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .blog-post-alt-read-more {
@@ -173,7 +173,7 @@
   border-style: solid solid solid solid;
   border-radius: 30px;
   color: #fff;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -338,10 +338,6 @@
 				color: #171515;
 				text-align: center;
 				margin-top: 7px;
-			}
-
-			.blog-post-alt-title {
-
 			}
 
 				.blog-post-alt-title h2 {
