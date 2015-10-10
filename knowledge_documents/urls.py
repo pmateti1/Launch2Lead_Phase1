@@ -4,6 +4,7 @@ from knowledge_documents import views
 
 urlpatterns = [
     url(r'^knowledge_bucket$', views.view_post, name='knowledgeBlog'),
-    url(r'^knowledge_bucket/my_first_blog$', views.view_post_detail, name='knowledgeBlog'),
-    url(r'^knowledge_bucket/(?P<slug>\S+)$', views.BlogDetail.as_view(), name="entry_detail"),
+    # url(r'^knowledge_bucket/my_first_blog$', views.view_post_detail, name='knowledgeBlog'),
+    url(r'^knowledge_bucket/Post/(?P<slug>\S+)$', views.PostDetail.as_view(), name="post_detail"),
+    url(r'^knowledge_bucket/market/(?P<slug>\S+)$', views.MarketResearchDetail.as_view(), name="market_detail"),
  ]
