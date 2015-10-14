@@ -1,0 +1,29 @@
+{% extends "Launch2Lead/base.html" %}
+{% block content %}
+    {% load staticfiles %}
+<section id="circle" >
+    <form action="" method="POST">
+        {% csrf_token %}
+<section id="navblog">
+    <div class="col-md-12" style="margin-top: -55px;text-align: center">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a class="btn-lg" data-toggle="tab" href="#homeBLog" aria-expanded="true">Job Posting</a>
+            </li>
+            <li>
+                <a class="btn-lg" data-toggle="tab" href="#homeBLog_published" aria-expanded="true">Buy/Sell Products</a>
+            </li>
+            <li>
+                <a class="btn-lg" data-toggle="tab" href="#homeBLog_formats" aria-expanded="true">Networking</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" name="submit" value="Submit"/>
+    </form>
+</section>
+{% endblock %}

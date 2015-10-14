@@ -29,3 +29,6 @@ class MarketResearchDetail(ListView):
 class PostDetail(ListView):
     model = models.Published_Post
     template_name = "Launch2Lead/Post_Detail.html"
+
+
+

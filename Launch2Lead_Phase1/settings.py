@@ -41,10 +41,11 @@ INSTALLED_APPS = (
     'django_markdown',
     'Launch2Lead_v01',
     'authentication',
-    'knowledge_documents'
-
-
+    'knowledge_documents',
+    'circle',
 )
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

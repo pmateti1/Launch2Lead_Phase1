@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^', include('authentication.urls')),
     url(r'^', include('knowledge_documents.urls')),
     url(r'^', include('Launch2Lead_v01.urls')),
+    url(r'^', include('circle.urls')),
     url(r'^$', views.index, name='index'),
     url(r'^Launch2Lead_story', views.story_animation_slider, name='storyanimi'),
     url(r'^grappelli/', include('grappelli.urls')), # grappelli URLS
