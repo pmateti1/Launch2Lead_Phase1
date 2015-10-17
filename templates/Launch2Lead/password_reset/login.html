@@ -21,7 +21,7 @@
     <link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff' %}" rel="stylesheet">
     <link href="{% static 'font-awesome/fonts/fontawesome-webfont.woff2' %}" rel="stylesheet">
 
-    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script >
     <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
 
 </head>
@@ -30,36 +30,37 @@
         <button style="float: right" type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                 aria-hidden="true">&times;</span></button>
         <ul id="myTab" class="nav nav-tabs">
-            <li><a href="#signin" data-toggle="tab">Sign In</a></li>
-            <li><a href="#signup" data-toggle="tab">Register</a></li>
+            <li><a href="#signin" data-toggle="tab">SIGN IN</a></li>
+            <li><a href="#signup" data-toggle="tab">REGISTER</a></li>
         </ul>
 
         <div class="tab-content">
             {#################################################### Login Tab #######################################}
             <div class="tab-pane fade active in" id="signin">
-                <form id="LoginForm" class="form-signin span4" action="" method="post">
+                <form id="LoginForm" class="form-signin span4" action="/" method="post">
                     {% csrf_token %}
                     {% if form_auth.errors %}<p>Please correct the following fields:</p>{% endif %}
                     <div class="register_div">
                         {% if form_auth.username.errors %}
                             <p class="error">{{ form_auth.username.errors }}</p>{% endif %}
                         <label style="text-align: left" for="username"{% if form_auth.username.errors %}
-                               class="error"{% endif %}>Username:</label>
-                        {{ form_auth.username }}<br/>
+                               class="error"{% endif %}>EMAIL:</label>
+                        {{ form_auth.email }}<br/>
                     </div>
                     <div class="register_div">
                         <br>
                         {% if form_auth.password.errors %}
                             <p class="error">{{ form_auth.password.errors }}</p>{% endif %}
                         <label for="password"{% if form_auth.password.errors %}
-                               class="error"{% endif %}>Password:</label>
+                               class="error"{% endif %}>PASSWORD:</label>
                         {{ form_auth.password }}
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="login"></label>
 
                         <div class="controls">
-                            <input id="login" type="submit" name="confirmsignin" class="btn btn-success" value="Login"/>
+                            <input id="confirmsignin" type="submit" name="confirmsignin" class="btn btn-success"
+                                   value="LOGIN"/>
                         </div>
                     </div>
                 </form>
@@ -73,25 +74,25 @@
                     {% if form.errors %}<p>Please correct the following fields:</p>{% endif %}
                     <div class="register_div">
                         {% if form.username.errors %}<p class="error">{{ form.username.errors }}</p>{% endif %}
-                        <label for="username"{% if form.username.errors %} class="error"{% endif %}>Username:</label>
+                        <label for="username"{% if form.username.errors %} class="error"{% endif %}>USERNAME:</label>
                         {{ form.username }}
                     </div>
                     <div class="register_div">
                         <br>{% if form.email.errors %}<p class="error">{{ form.email.errors }}</p>{% endif %}
-                        <label for="email"{% if form.email.errors %} class="error"{% endif %}>Email:</label>
+                        <label for="email"{% if form.email.errors %} class="error"{% endif %}>EMAIL:</label>
                         {{ form.email }}
                     </div>
                     <br>
 
                     <div class="register_div">
                         {% if form.password.errors %}<p class="error">{{ form.password.errors }}</p>{% endif %}
-                        <label for="password"{% if form.password.errors %} class="error"{% endif %}>Password:</label>
+                        <label for="password"{% if form.password.errors %} class="error"{% endif %}>PASSWORD:</label>
                         {{ form.password }}
                     </div>
                     <div class="register_div">
                         <br>{% if form.password2.errors %}<p class="error">{{ form.password2.errors }}</p>{% endif %}
-                        <label for="password2"{% if form.password2.errors %} class="error"{% endif %}>Verify
-                            Password:</label>
+                        <label for="password2"{% if form.password2.errors %} class="error"{% endif %}>VERIFY
+                            PASSWORD:</label>
                         {{ form.password2 }}
                     </div>
                     <div class="control-group">
@@ -99,7 +100,7 @@
 
                         <div class="controls">
                             <input id="confirmsignup" type="submit" name="confirmsignup" class="btn btn-success"
-                                   value="Register"/>
+                                   value="REGISTER"/>
                         </div>
                     </div>
                 </form>

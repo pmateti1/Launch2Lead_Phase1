@@ -27,7 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_PROFILE_MODULE = 'authentication.UserProfile'
+AUTH_PROFILE_MODULE  = 'authentication.UserProfile'
+# AUTHENTICATION_BACKENDS = ['authentication.backends.EmailAuthBackend', ]
+
+# AUTH_PROFILE_MODULE = 'authentication.UserProfile'
 # Application definition
 
 INSTALLED_APPS = (
@@ -44,8 +47,6 @@ INSTALLED_APPS = (
     'knowledge_documents',
     'circle',
 )
-
-
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

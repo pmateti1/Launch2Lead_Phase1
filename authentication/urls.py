@@ -9,6 +9,4 @@ urlpatterns = [
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
             views.reset_confirm, name='password_reset_confirm'),
     url(r'^success/$', views.success, name='success'),
-    # url(r'^$', views.user_login, name='login'),
-    # url(r'^$', views.index, name='index'),
  ]

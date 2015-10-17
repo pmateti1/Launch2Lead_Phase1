@@ -446,3 +446,26 @@
     width: 33.33333333%;
     padding-top: 40px;
 }}
+
+#circle .readmore_area a::before {
+  padding: 8px 13px;
+
+}
+#circle .readmore_area a span {
+  padding: 8px 13px;
+
+}
+#circle .readmore_area {
+  margin-top: 5px;
+    left: 45%;
+
+}
+
+#circle .readmore_area a {
+    font-size: 14px;
+    margin-left: 0;
+    border: 2px solid #ffd133;
+    color: #fec503;
+    width: 150px;
+
+}
