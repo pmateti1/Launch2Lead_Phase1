@@ -27,18 +27,25 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_PROFILE_MODULE = 'authentication.UserProfile'
+AUTH_PROFILE_MODULE  = 'authentication.UserProfile'
+# AUTHENTICATION_BACKENDS = ['authentication.backends.EmailAuthBackend', ]
+
+# AUTH_PROFILE_MODULE = 'authentication.UserProfile'
 # Application definition
 
 INSTALLED_APPS = (
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_markdown',
     'Launch2Lead_v01',
     'authentication',
+    'knowledge_documents',
+    'circle',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -62,6 +69,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
+                "django.core.context_processors.request",
                 'django.template.context_processors.debug',
                 'django.template.context_processors.i18n',
                 'django.template.context_processors.media',
@@ -111,6 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+
 
 STATIC_URL = '/static/'
 
